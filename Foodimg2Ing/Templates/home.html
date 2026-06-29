@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block home %}
+
+            <div id="info" class="col-md-8">
+                <div class="card m-3">
+                    <img src="{{ url_for('static',filename='images/cover.jpg')}}" class="card-img-top" alt="..." >
+                    <div class="card-body" >
+                      <h5 class="card-title text-center" id=infotitle >Recipe Generation from Food Image</h5>
+                      <p>Upload a food image and our AI will generate:</p>
+                      <p>✅ Food Name &nbsp; ✅ Ingredients &nbsp; ✅ Step-by-step Recipe</p>
+                      <p class="text-muted">⏳ Processing time: ~40 seconds</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div id="loading" style="display:none;" class="col-md-8">
+                <div class="loader">
+                    <div class="inner one"></div>
+                    <div class="inner two"></div>
+                    <div class="inner three"></div>
+                    <h4>Loading</h4>
+                    <h5>Kindly wait for few seconds</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+
+{% endblock home %}
